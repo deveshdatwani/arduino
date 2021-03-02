@@ -9,8 +9,8 @@ void loop() {
   // put your main code here, to run repeatedly:
    for (u=1; u<=100; u++){
        digitalWrite(13,HIGH);
-       delay(100*u);
+       delay(10*u);
        digitalWrite(13,LOW);
-       delay(100*u);
+       delay(10*u);
    }
 }
