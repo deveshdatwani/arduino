@@ -7,6 +7,8 @@ void setup() {
   Serial.begin(9600);
   float xValue;
   float yValue;
+  pinMode(13,OUTPUT);
+
 }
 
 void loop(){
@@ -16,5 +18,11 @@ void loop(){
   Serial.print(xValue);
   Serial.print("\t");
   Serial.print(yValue);
-  delay(1000);
+  
+  if (xValue >= 1000){
+    digitalWrite(13,HIGH);
+  }
+  else {
+    digitalWrite(13, LOW);
+  }
 }
